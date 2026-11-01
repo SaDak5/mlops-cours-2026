@@ -14,10 +14,10 @@ nodes:
   - role: control-plane
     extraPortMappings:
       - containerPort: 80       # Ingress HTTP (Labs 5+)
-        hostPort: 80
+        hostPort: 8082
         protocol: TCP
       - containerPort: 443      # Ingress HTTPS
-        hostPort: 443
+        hostPort: 8443
         protocol: TCP
       - containerPort: 30080    # NodePort Kourier / KServe (Lab 5)
         hostPort: 30080
